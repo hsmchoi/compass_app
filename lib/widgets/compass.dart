@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:math' as math;
-import 'package:flutter_animate/flutter_animate.dart';
+import '../models/direction.dart';
 
 class Compass extends StatefulWidget {
   final Direction currentDirection;

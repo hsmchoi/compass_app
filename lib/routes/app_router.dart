@@ -30,7 +30,7 @@ final goRouterProvider = Provider<GoRouter>((ref) {
           GoRoute(
             path: ':interestName',
             builder: (context, state) {
-              final interestName = state.params['interestName']!;
+              final interestName = state.pathParameters['interestName']!;
               final interest = ref
                   .read(interestProvider)[Direction.east]!
                   .firstWhere((element) => element.name == interestName);
@@ -50,7 +50,7 @@ final goRouterProvider = Provider<GoRouter>((ref) {
           GoRoute(
             path: ':interestName',
             builder: (context, state) {
-              final interestName = state.params['interestName']!;
+              final interestName = state.pathParameters['interestName']!;
               final interest = ref
                   .read(interestProvider)[Direction.west]!
                   .firstWhere((element) => element.name == interestName);
@@ -70,7 +70,7 @@ final goRouterProvider = Provider<GoRouter>((ref) {
           GoRoute(
             path: ':interestName',
             builder: (context, state) {
-              final interestName = state.params['interestName']!;
+              final interestName = state.pathParameters['interestName']!;
               final interest = ref
                   .read(interestProvider)[Direction.south]!
                   .firstWhere((element) => element.name == interestName);
@@ -90,7 +90,7 @@ final goRouterProvider = Provider<GoRouter>((ref) {
           GoRoute(
             path: ':interestName',
             builder: (context, state) {
-              final interestName = state.params['interestName']!;
+              final interestName = state.pathParameters['interestName']!;
               final interest = ref
                   .read(interestProvider)[Direction.north]!
                   .firstWhere((element) => element.name == interestName);

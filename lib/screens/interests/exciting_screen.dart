@@ -1,6 +1,5 @@
 import 'package:compass_app/models/interest.dart';
 import 'package:compass_app/providers/interest_provider.dart';
-import 'package:compass_app/screens/interests/exciting_detail_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
